@@ -86,9 +86,12 @@ p {
 
 .contenedor-sobre-nosotros{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px; /* Puedes reducir más si aún lo ves separado */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .relatos{
@@ -96,9 +99,21 @@ p {
 }
 
 .relato{
-    max-width: 700px;
+  width: 55%;
 }
 
+@media (max-width: 768px) {
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ilustracion,
+  .relato {
+    width: 90%;
+  }
+}
 .n-relato{
     font-size: 25px;
     color: #7c79a0;
@@ -106,9 +121,10 @@ p {
 }
 
 .ilustracion{
-    width: 400px; /* Puedes ajustar el tamaño según prefieras */
-    height: auto;
-    border-radius: 8px;
+    width: 35%; /* Más pequeño que antes */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .portafolio{

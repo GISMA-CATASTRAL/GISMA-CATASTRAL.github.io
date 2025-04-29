@@ -8,6 +8,10 @@
     font-family: 'Arvo', serif;
 }
 
+p {
+  color: #333333;
+}
+
 .contenedor{
     width: 90%;
     margin: 0 auto;

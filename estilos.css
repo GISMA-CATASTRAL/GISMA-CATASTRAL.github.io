@@ -86,6 +86,8 @@ p {
 
 .contenedor-sobre-nosotros{
     display: flex;
+    align-items: flex-start;
+    gap: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -95,7 +97,7 @@ p {
 }
 
 .relato{
-    margin-bottom: 30px;
+    max-width: 700px;
 }
 
 .n-relato{
@@ -105,7 +107,9 @@ p {
 }
 
 .ilustracion{
-    width: 30%;
+    width: 400px; /* Puedes ajustar el tamaño según prefieras */
+    height: auto;
+    border-radius: 8px;
 }
 
 .portafolio{

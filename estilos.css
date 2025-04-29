@@ -87,7 +87,6 @@ p {
 .contenedor-sobre-nosotros{
     display: flex;
     align-items: flex-start;
-    gap: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
 }

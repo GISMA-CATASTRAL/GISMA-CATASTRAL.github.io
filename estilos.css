@@ -153,15 +153,16 @@ p {
 
 .imagen-contenedor {
   position: relative;
-  display: inline-block;
-  width: 100%;
+  width: 30%; /* Ajusta para tener 3 por fila en desktop */
+  margin-bottom: 20px;
 }
 
 .imagen-contenedor img {
   display: block;
   width: 100%;
-  height: auto;
-  border-radius: 12px; /* opcional */
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .texto-centrado {

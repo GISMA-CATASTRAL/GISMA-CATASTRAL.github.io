@@ -137,7 +137,7 @@ p {
     flex-wrap: wrap;
 }
 
-.imagen-contenedor{
+/*.imagen-contenedor{
     width: 31%;
     height: 250px;
     margin-bottom: 20px;
@@ -149,6 +149,19 @@ p {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}*/
+
+.imagen-contenedor {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.imagen-contenedor img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* opcional */
 }
 
 .texto-centrado {
@@ -156,10 +169,11 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: black;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* mejora legibilidad */
+  pointer-events: none; /* evita interferencias con clics */
 }
 
 .table-pricing{

@@ -170,11 +170,14 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
-  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #000;
+  font-size: 28px; /* Aumentado */
   font-weight: bold;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* mejora legibilidad */
-  pointer-events: none; /* evita interferencias con clics */
+  text-align: center;
+  pointer-events: none;
 }
 
 .table-pricing{

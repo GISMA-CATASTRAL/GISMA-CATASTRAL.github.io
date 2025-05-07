@@ -9,7 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" />
     <title>Document</title>
+     <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -72,15 +79,7 @@
                     <div class="imagen-contenedor">
                         <img src="seis.jpg" alt="Descripción">
                         <div class="texto-centrado">Estudio títulos</div>
-                        
-                     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" />
-                       
-                            <style>
-                                #map {
-                                height: 400px;
-                    width: 100%;
-                            }
-                        </style>
+        
                     </div>
                 </div>
             </div>
@@ -90,6 +89,12 @@
 
     </main>
 
+    <section id="mapa">
+            <h2>Mapa Interactivo</h2>
+            <!-- Contenedor del mapa -->
+            <div id="map"></div>
+        </section>
+    
    <section id="contacto">
             <h2>Contacto</h2>
             <form id="contact-form" action="https://formspree.io/f/xjkwkgqr" method="POST">
@@ -99,6 +104,7 @@
             <button type="submit">Enviar</button>
             </form>
     </section>
+
 
 <footer>
     © 2025 GIGMA CATASTRAL COLOMBIA. Todos los derechos reservados.

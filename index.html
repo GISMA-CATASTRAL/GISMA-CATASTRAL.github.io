@@ -142,11 +142,6 @@
         };
         L.control.layers(baseMaps).addTo(map);
 
-        // Agregar un marcador con un popup
-        var marker = L.marker([4.5709, -74.2973]).addTo(map)
-            .bindPopup('<b>¡Bienvenido a Colombia!</b><br>Este es un marcador en el mapa.')
-            .openPopup();
-
         // Agregar control de geolocalización
         L.control.locate({
             position: 'topright',
@@ -167,7 +162,9 @@
                 L.latLng(4.5709, -74.2973), // Bogotá
                 L.latLng(6.2442, -75.5812)  // Medellín
             ],
-            routeWhileDragging: true
+            routeWhileDragging: true,  // Permitir arrastrar la ruta
+            draggableWaypoints: true, // Permitir mover los puntos
+            createMarker: function() { return null; } // Evitar la creación de marcadores de ruta
         }).addTo(map);
     </script>
 </body>
